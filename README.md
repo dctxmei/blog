@@ -53,4 +53,3 @@ $ git push
 $ git clone git@github.com:dctxmei/maupassant-hexo.git themes/maupassant
 $ rm -rf themes/maupassant/.git*
 ```
-# blog

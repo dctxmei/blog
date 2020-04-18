@@ -1,0 +1,42 @@
+name: Hexo CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: debian-latest
+    name: A job to deploy blog.
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+        with:
+          submodules: true
+
+      - name: Cache node modules
+        uses: actions/cache@v1
+        id: cache
+        with:
+          path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+      - name: Install Dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm install
+
+      - name: Deploy
+        id: deploy
+        uses: sma11black/hexo-action@v1.0.0
+        with:
+          deploy_key: ${{ secrets.SECRET }}
+        user_name: geomagneticreversal
+        user_email: geomagneticreversal@protonmail.com
+
+      - name: Get the output
+        run: |
+          echo "${{ steps.deploy.outputs.notify }}"
