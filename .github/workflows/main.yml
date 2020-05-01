@@ -1,0 +1,33 @@
+name: Hexo CI
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+
+      - name: Configuration environment
+        env:
+          SECRET: ${{ secrets.SECRET }}
+        run: |
+          mkdir ~/.ssh/
+          echo "$SECRET" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          git config --global user.email "63894595+geomagneticreversal@users.noreply.github.com"
+          git config --global user.name "geomagneticreversal"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Deploy Hexo
+        run: |
+          git clone https://github.com/dctxmei/maupassant-hexo.git themes/maupassant/
+          npm run-script build
+          npm run-script deploy
