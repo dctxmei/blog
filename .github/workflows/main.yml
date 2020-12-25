@@ -20,8 +20,8 @@ jobs:
           mkdir ~/.ssh/
           echo "$SECRET" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
-          git config --global user.email "63894595+geomagneticreversal@users.noreply.github.com"
-          git config --global user.name "geomagneticreversal"
+          git config --global user.email "dctxmei@gmail.com"
+          git config --global user.name "Dct Mei"
 
       - name: Install dependencies
         run: npm install
