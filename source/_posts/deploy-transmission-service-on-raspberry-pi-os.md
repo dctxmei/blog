@@ -9,7 +9,7 @@ categories: 技術
 toc: true
 ---
 
-又一次為 Raspberry Pi OS 進行 Upgrade 後，才發現跑起來的服務實在是少呢，思索一下，不妨再部署個 Transmission 罷。
+又一次爲 Raspberry Pi OS 進行 Upgrade 後，才發現跑起來的服務實在是少呢，思索一下，不妨再部署個 Transmission 罷。
 
 ## 安裝 Transmission
 
@@ -44,10 +44,10 @@ $ sudo vim /etc/transmission-daemon/settings.json
 +    "rpc-whitelist-enabled": false,
 ```
 
-`rpc-password` 內寫下明文密碼，啟動服務後會被哈希值代替。
+`rpc-password` 內寫下明文密碼，啓動服務後會被哈希值代替。
 `rpc-whitelist-enabled` 在一切部署完成後修改回 true，交由 Web Server 反向代理，以後通過 HTTPS 訪問。
 
-### 啟動服務
+### 啓動服務
 
 ```
 $ sudo systemctl start transmission-daemon.service
@@ -57,7 +57,7 @@ $ sudo systemctl start transmission-daemon.service
 
 http://ip:9091/
 
-用戶名是 transmission，密碼為上述 settings.json 檔案所設。
+用戶名是 transmission，密碼爲上述 settings.json 檔案所設。
 
 ## Transmission Web Control
 
@@ -74,7 +74,7 @@ $ sudo cp -r /usr/share/transmission/web/ /usr/share/transmission/web_bak/
 
 ### 獲取 Transmission Web Control 檔案
 
-當前的 Latest release 為 v1.6.0-beta2。
+當前的 Latest release 爲 v1.6.0-beta2。
 
 ```
 $ wget -P /tmp/ https://github.com/ronggang/transmission-web-control/archive/v1.6.0-beta2.tar.gz
@@ -97,7 +97,7 @@ $ tar -xvf v1.6.0-beta2.tar.gz
 
 ### 設定檔案權限
 
-Transmission Web Control 檔案中，目錄的默認權限是 700，這會導致訪問 Web 呈現空白（因為 Owner 沒有權限）。
+Transmission Web Control 檔案中，目錄的默認權限是 700，這會導致訪問 Web 呈現空白（因爲 Owner 沒有權限）。
 
 ```
 $ cd transmission-web-control-1.6.0-beta2/

@@ -10,7 +10,7 @@ categories: 技術
 
 * 如何使用 Aircrack-ng 工具不在本文範圍內，請左轉谷歌之。
 * 下文中已抓包至 ~/cap/-01.cap。
-* 下文中「crunch.txt」為「$ crunch 8 8 123456789 -o ~/crunch.txt」所生成。
+* 下文中「crunch.txt」爲「$ crunch 8 8 123456789 -o ~/crunch.txt」所生成。
 
 #### 安裝 hashcat
 ```

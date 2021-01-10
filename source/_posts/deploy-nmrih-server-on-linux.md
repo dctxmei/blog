@@ -20,7 +20,7 @@ toc: true
 # su - nmrihserver
 ```
 
-## 為 SteamCMD 創建一個目錄
+## 爲 SteamCMD 創建一個目錄
 
 ```
 $ mkdir steamcmd
@@ -39,7 +39,7 @@ $ wget http://media.steampowered.com/client/steamcmd_linux.tar.gz
 $ tar -zxvf steamcmd_linux.tar.gz
 ```
 
-## 為伺服器文件創建一個目錄
+## 爲伺服器文件創建一個目錄
 
 ```
 $ mkdir /home/nmrihserver/serverfiles/
@@ -47,7 +47,7 @@ $ mkdir /home/nmrihserver/serverfiles/
 
 ## 下載伺服器數據
 
-對於 64 位發行版，地獄已滿需 32 位運行庫才可運行。
+對於 64 位發行版，地獄已滿需 32 位運行庫纔可運行。
 
 ### Debian
 
@@ -71,7 +71,7 @@ $ mkdir /home/nmrihserver/serverfiles/
 
 * 需要一個Steam 用戶名和密碼才能使用 SteamCMD 進行身份驗證
 * 推薦創建一個新的 Steam 用戶
-* Steam 用戶需完成郵箱驗證 + 訂閱地獄已滿（No More Room in Hell）才可繼續
+* Steam 用戶需完成郵箱驗證 + 訂閱地獄已滿（No More Room in Hell）纔可繼續
 
 ```
 $ ./steamcmd.sh +login username password +force_install_dir "/home/nmrihserver/serverfiles" +app_update 317670 validate +quit
@@ -89,7 +89,7 @@ $ ./steamcmd.sh +login nmrihserver 2nmrihserver +force_install_dir "/home/nmrihs
 
 * 下載伺服器的過程可能會突然中斷，請重複下載命令，會斷點續傳，可自行寫一個腳本以保證下載順利。
 
-## 啟動伺服器
+## 啓動伺服器
 
 ```
 $ /home/nmrihserver/serverfiles/srcds_run -console -game nmrih -insecure +map nmo_broadway -maxplayers 5

@@ -10,7 +10,7 @@ toc: true
 
 V2Ray，是可以和各種軟體互相配合的，這就包含了 Tor。
 
-如果你注重網路隱私的話，本文或許能為你提供一些參考。
+如果你注重網路隱私的話，本文或許能爲你提供一些參考。
 
 ## 結構
 
@@ -49,7 +49,7 @@ ExcludeNodes {by},{cn},{cu},{hk},{ir},{kp},{mo},{pk},{ru},{sy},{vn}
 StrictNodes 1
 ```
 
-### 啟用並啟動 Tor
+### 啓用並啓動 Tor
 
 ```
 # systemctl enable tor

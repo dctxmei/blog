@@ -64,15 +64,15 @@ $ fontforge -script font-merge.pe
 
 ## 說明
 
-Monaco_Linux.ttf 為 A 字體
-PowerlineSymbols.otf 為 B 字體
-Monaco for Powerline.otf 為合成字體
+Monaco_Linux.ttf 爲 A 字體
+PowerlineSymbols.otf 爲 B 字體
+Monaco for Powerline.otf 爲合成字體
 
 ```
 SetFontNames("Monaco_for_Powerline", "Monaco for Powerline", "Monaco", "Regolare", "")
 ```
 
-Monaco_for_Powerline 為 PostScript 名稱
-Monaco for Powerline 為全名
-Monaco 為家族名
-Regolare 為樣式
+Monaco_for_Powerline 爲 PostScript 名稱
+Monaco for Powerline 爲全名
+Monaco 爲家族名
+Regolare 爲樣式

@@ -134,13 +134,13 @@ $ make menuconfig
 CONFIG_STATIC=y
 ```
 
-為靜態編譯。
+爲靜態編譯。
 
 ```
 CONFIG_SYSROOT="/usr/lib/android-ndk/platforms/android-22/arch-arm"
 ```
 
-這裡的 android-22 為 API 級別，可隨意更換。
+這裏的 android-22 爲 API 級別，可隨意更換。
 
 具體請使用：
 
@@ -148,4 +148,4 @@ CONFIG_SYSROOT="/usr/lib/android-ndk/platforms/android-22/arch-arm"
 $ ls /usr/lib/android-ndk/platforms
 ```
 
-查看，並前往 [什么是 API 級別？](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html?hl=zh-cn#ApiLevels) 和 [平臺版本](https://developer.android.com/about/dashboards/index.html?hl=zh-cn)。
+查看，並前往 [什幺是 API 級別？](https://developer.android.com/guide/topics/manifest/uses-sdk-element.html?hl=zh-cn#ApiLevels) 和 [平臺版本](https://developer.android.com/about/dashboards/index.html?hl=zh-cn)。

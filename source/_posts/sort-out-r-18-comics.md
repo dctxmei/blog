@@ -23,7 +23,7 @@ categories: 技術
 
 需安裝 Imagemagick。
 
-將當前目錄所有 PNG 轉換為 JPG 並刪除源文件：
+將當前目錄所有 PNG 轉換爲 JPG 並刪除源文件：
 
 ```
 $ mogrify -format jpg *.png && rm *.png
@@ -31,13 +31,13 @@ $ mogrify -format jpg *.png && rm *.png
 
 ## 檢查圖片名
 
-個人推薦百張圖片以內為 00.jpg 01.jpg……（千張圖片則將「i=100」改為「i=1000」）：
+個人推薦百張圖片以內爲 00.jpg 01.jpg……（千張圖片則將「i=100」改爲「i=1000」）：
 
 ```
 $ i=100; for img in *.jpg; do mv $img ${i#1}.jpg; (( i ++ )); done
 ```
 
-若要排除某圖片（「grep -v」後，「?」為需要排除的圖片名）：
+若要排除某圖片（「grep -v」後，「?」爲需要排除的圖片名）：
 
 ```
 $ i=100; for img in $(ls *.jpg | grep -v ?.jpg); do mv $img ${i#1}.jpg; (( i ++ )); done
@@ -45,7 +45,7 @@ $ i=100; for img in $(ls *.jpg | grep -v ?.jpg); do mv $img ${i#1}.jpg; (( i ++ 
 
 ## 壓縮
 
-這裡用了一個小腳本：
+這裏用了一個小腳本：
 
 ```
 #!/bin/bash

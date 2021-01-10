@@ -15,7 +15,7 @@ toc: true
 
 * 一張 Raspberry Pi 3
 * 一張 Micro SD Card 和讀卡器
-* 任意 Linux OS（本文檔以 Debian 為標準）
+* 任意 Linux OS（本文檔以 Debian 爲標準）
 * 流暢的網絡
 
 ## 分區
@@ -229,7 +229,7 @@ over_voltage=6
 force_turbo=1
 ```
 
-### 設置啟動選項
+### 設置啓動選項
 
 ```
 # nano /boot/cmdline.txt
@@ -237,7 +237,7 @@ force_turbo=1
 dwc_otg.lpm_enable=0 console=ttyAMA0,115200 kgdboc=ttyAMA0,115200 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=deadline rootwait
 ```
 
-### 啟動時啟用 eth0 網絡
+### 啓動時啓用 eth0 網絡
 
 ```
 # cd /etc/init.d/
@@ -250,7 +250,7 @@ dwc_otg.lpm_enable=0 console=ttyAMA0,115200 kgdboc=ttyAMA0,115200 console=tty1 r
 # rc-update --update
 ```
 
-### 自啟 sshd
+### 自啓 sshd
 
 ```
 # rc-update add sshd default

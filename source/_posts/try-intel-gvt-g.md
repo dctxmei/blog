@@ -66,7 +66,7 @@ fi
 # virsh edit <DOMAIN name>
 ```
 
-檔案首行修改為：
+檔案首行修改爲：
 
 ```xml
 <domain type='kvm' xmlns:qemu='http://libvirt.org/schemas/domain/qemu/1.0'>
@@ -83,11 +83,11 @@ fi
 
 此處的 UUID 對應上文中的 GVT_GUID。
 
-然後啟動虛擬機，檢查虛擬機是否有監測到新的顯示設備（如果是 Windows，應同時檢查是否有安裝相應驅動）。
+然後啓動虛擬機，檢查虛擬機是否有監測到新的顯示設備（如果是 Windows，應同時檢查是否有安裝相應驅動）。
 
 ### 僅使用 Intel GVT-g
 
-將上文中的 `display='off'` 修改為 `display='on'`。
+將上文中的 `display='off'` 修改爲 `display='on'`。
 
 刪除原有的 `<graphics>...</graphics>` 和 `<video>...</video>`，用以下內容代替：
 
@@ -122,7 +122,7 @@ fi
   </qemu:commandline>
 ```
 
-其中的 `vbios_gvt_uefi.rom` 僅在虛擬機為 UEFI 環境的情況下使用，且需要前往
+其中的 `vbios_gvt_uefi.rom` 僅在虛擬機爲 UEFI 環境的情況下使用，且需要前往
 
 http://120.25.59.132:3000/vbios_gvt_uefi.rom
 
@@ -136,4 +136,4 @@ http://120.25.59.132:3000/vbios_gvt_uefi.rom
 
 <div id="configure_intel_gvt-g_virtual_core_display"></div>
 
-* [2]: [笔记本 Optimus MUXless 下的 Intel 和 NVIDIA 虚拟机显卡直通 | Lan Tian @ Blog](https://lantian.pub/article/modify-computer/laptop-intel-nvidia-optimus-passthrough.lantian/#%E9%85%8D%E7%BD%AE-Intel-GVT-g-%E8%99%9A%E6%8B%9F%E6%A0%B8%E6%98%BE)
+* [2]: [筆記本 Optimus MUXless 下的 Intel 和 NVIDIA 虛擬機顯卡直通 | Lan Tian @ Blog](https://lantian.pub/article/modify-computer/laptop-intel-nvidia-optimus-passthrough.lantian/#%E9%85%8D%E7%BD%AE-Intel-GVT-g-%E8%99%9A%E6%8B%9F%E6%A0%B8%E6%98%BE)
