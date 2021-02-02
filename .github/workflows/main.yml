@@ -20,7 +20,7 @@ jobs:
           mkdir ~/.ssh/
           echo "$SECRET" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
-          git config --global user.email "dctxmei@gmail.com"
+          git config --global user.email "dctxmei@yandex.com"
           git config --global user.name "Dct Mei"
 
       - name: Install dependencies

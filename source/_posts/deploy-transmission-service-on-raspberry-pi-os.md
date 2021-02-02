@@ -85,7 +85,7 @@ $ wget -P /tmp/ https://github.com/ronggang/transmission-web-control/archive/v1.
 原有的 Web 檔案無需移除，Transmission Web Control 提供了 Original UI 功能，仍可繼續使用。
 
 ```
-$ sudo install /usr/share/transmission/web/index.html /usr/share/transmission/web/index.original.html
+$ sudo install -m 644 /usr/share/transmission/web/index.html /usr/share/transmission/web/index.original.html
 ```
 
 ### 解開 Transmission Web Control 檔案
