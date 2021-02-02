@@ -22,4 +22,4 @@ layout: timeline
 
 | CONTACT  | BASE64                               |
 | :------- | -----------------------------------: |
-| Email    | bWFpbHRvOmRjdHhtZWlAZ21haWwuY29tCg== |
+| Email    | bWFpbHRvOmRjdHhtZWlAeWFuZGV4LmNvbQo= |
