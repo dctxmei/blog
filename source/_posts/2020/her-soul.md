@@ -48,7 +48,7 @@ Information: You may need to update /etc/fstab.
 # cryptsetup luksFormat /dev/sdX3
 # cryptsetup open /dev/sdX3 cryptlvm_new
 # pvcreate /dev/mapper/cryptlvm_new
-# vgcreate "$UUID" /dev/mapper/cryptlvm
+# vgcreate "$UUID" /dev/mapper/cryptlvm_new
 # lvcreate -L XG "$UUID" -n root
 # lvcreate -l 100%FREE "$UUID" -n swap
 ```
